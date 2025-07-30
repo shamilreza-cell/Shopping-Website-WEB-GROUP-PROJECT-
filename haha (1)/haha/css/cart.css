@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('../image/bg.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;;
+}
+
+.cart-message-box {
+  background: #ffffff;
+  padding: 50px 40px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 450px;
+  width: 90%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.cart-message-box h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #111;
+  letter-spacing: 0.5px;
+}
+
+.cart-message-box .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-product {
+  background-color: #111;
+  color: #fff;
+}
+
+.btn-product:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.btn-checkout {
+  background-color: #555;
+  color: #fff;
+}
+
+.btn-checkout:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

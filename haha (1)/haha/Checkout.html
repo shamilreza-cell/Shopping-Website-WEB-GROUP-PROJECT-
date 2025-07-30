@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fake Checkout Page</title>
+        <script src="https://kit.fontawesome.com/79bcca1e87.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+
+    <!--nav-->
+  <header>
+    <nav class="navbar">
+      <div class="logo-text">NØCTURN</div>
+
+      <!-- Hamburger Button -->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+
+      <div class="navbar-links" id="nav-links">
+        <a href="home.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </nav>
+
+  </header>
+
+    <body>
+        <div class="GoToCheckOut">
+            <h2 style="text-align: center;">Purchase Summary</h2>
+
+            <table class="CheckOut-Table">
+                <thead>
+                    <tr>
+                        <th class="CheckOut-th">Picture</th>
+                        <th class="CheckOut-th">Product</th>
+                        <th class="CheckOut-td">Price(RM)</th>
+                        <th class="CheckOut-td">Quantity</th>
+                        <th class="CheckOut-td">Subtotal(RM)</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="image/product_1.png" alt="Tshirt1" width="100"></td>
+                        <td class="CheckOut-td">Signature Nightshade Tee</td>
+                        <td class="CheckOut-td Price">110.00</td>
+                        <td><input type="number" value="1" min="0" class="CheckOut-td Qty" /></td>
+                        <td class="CheckOut-td subtotal">110.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/product_2.png" alt="Tshirt2" width="100"></td>
+                        <td class="CheckOut-td">White Dynamic Tee</td>
+                        <td class="CheckOut-td Price">139.00</td>
+                        <td><input type="number" value="1" min="0" class="CheckOut-td Qty" /></td>
+                        <td class="CheckOut-td subtotal">139.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="image/product_3.png" alt="Tshirt3" width="100"></td>
+                        <td class="CheckOut-td">Seasonal Basic Tee</td>
+                        <td class="CheckOut-td Price">98.00</td>
+                        <td><input type="number" value="1" min="0" class="CheckOut-td Qty" /></td>
+                        <td class="CheckOut-td subtotal">98.00</td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr class="Total-Row">
+                        <td colspan="4" class="CheckOut-td">Sum Total:</td>
+                        <td id="grand-total" class="CheckOut-td"></td>
+                    </tr>
+
+                </tfoot>
+            </table>
+
+            <a href="Checkout2.html" class="Summary-Button">Go To Payment Method</a>
+        </div>
+
+        <script>
+             document.querySelectorAll(".Qty").forEach(input => {
+                input.addEventListener("input", updateTotals);
+            })
+
+            updateTotals();
+        </script>
+
+
+        <footer>
+           <p>&copy; 2025 NØCTURN. All rights reserved.</p>
+
+         <p>Contact us: 
+             <a href="mailto:contact@nocturn.com">contact@nocturn.com</a> | 
+             <a href="tel:+60123456789">+60 12-345 6789</a>
+         </p>
+
+         <p>Follow us on:
+             <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a> |
+             <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> |
+             <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+         </p>
+
+         <div class="footer-links">
+             <a href="#">Delivery & Shipping</a> |
+             <a href="#">Privacy Policy</a> |
+             <a href="#">Terms of Use</a>
+         </div>
+         
+        </footer>
+
+    </body>
+    
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products - NØCTURN</title>
+  <script src="https://kit.fontawesome.com/79bcca1e87.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js"></script>
+
+  <body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-text">NØCTURN</div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="navbar-links" id="nav-links">
+        <a href="home.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+      </div>
+    </nav>
+  </header>
+
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="image/product_5.png" alt="Signature Cloud blue bloated Tee" />
+      <img src="image/product_5a.png" alt="Back View of Cloud blue bloated Tee" />
+    </div>
+
+    <div class="product-details">
+      <h1>Cloud blue bloated Tee</h1>
+
+      <p>Soft, airy, and oversized—the Cloud Blue Bloated Tee is made for effortless comfort.
+        Crafted from lightweight cotton in a calming sky-toned hue, it features a relaxed silhouette that drapes naturally with movement. 
+        Perfect for laid-back days, this tee delivers a cozy feel with a clean, modern edge.</p>
+
+      <ul class="product-specs">
+        <li>80% Cotton 20% Polyester</li>
+        <li>Crew Neck Collar</li>
+        <li>Denim Patchwork Embroidered Logo</li>
+        <li>Disstressed Effect</li>
+        <li>Loose fit cutting</li>
+        <li>Machine wash inside out</li>
+        <li>Wash gently with like colors</li>
+      </ul>
+
+      <p><strong>SKU:</strong> NT-005</p>
+
+      <div class="product-rating" aria-label="Product rating: 4 out of 5 stars">
+        ★★★★☆ (322 reviews)
+      </div>
+
+      <div class="size-select">
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="xl">XL</option>
+        </select>
+        <a href="#" class="size-guide-link" target="#">Size Guide</a>
+      </div>
+
+      <div class="color-select">
+        <label>Color:</label>
+        <div class="color-options">
+          <button class="color-swatch" style="background:#000000" aria-label="Black"></button>
+          <button class="color-swatch" style="background:#555555" aria-label="Dark Grey"></button>
+          <button class="color-swatch" style="background:#3d477c" aria-label="White"></button>
+        </div>
+      </div>
+
+      <div class="quantity-select">
+        <label for="quantity">Quantity:</label>
+        <button type="button" class="qty-btn" id="decrement">-</button>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" />
+        <button type="button" class="qty-btn" id="increment">+</button>
+      </div>
+
+      <p class="stock-status in-stock">In Stock</p>
+
+      <div class="product-price">RM130.00</div>
+
+      <div class="product-buttons">
+        <a href="cart.html" class="add-to-cart">Add to Cart</a>
+        <a href="checkout.html" class="buy-now">Buy Now</a>
+      </div>
+
+      <p class="shipping-info" style="font-style: italic; color: #444; margin-top: 10px;">
+        Free shipping on orders over RM150
+      </p>
+
+      <div class="social-share" aria-label="Share product">
+        <span>Share:</span>
+         <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a> |
+         <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> |
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+    <footer>
+  <p>&copy; 2025 NØCTURN. All rights reserved.</p>
+
+  <p>Contact us: 
+    <a href="mailto:contact@nocturn.com">contact@nocturn.com</a> | 
+    <a href="tel:+60123456789">+60 12-345 6789</a>
+  </p>
+
+  <p>Follow us on:
+    <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a> |
+    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a> |
+    <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+  </p>
+
+  <div class="footer-links">
+    <a href="#">Delivery & Shipping</a> |
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Terms of Use</a>
+  </div>
+</footer>
+
+</body>
+</html>
